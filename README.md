@@ -58,36 +58,56 @@ The project evolved step-by-step from a basic MAC changer (v1) to a more advance
 ### ▶ Version 1 (Manual MAC)
 ```bash
 sudo python3 mac_spoof.py -i eth0 -m 00:11:22:33:44:55
+```
 ▶ Version 2 (Random MAC)
+```bash
 sudo python3 mac_spoof-v2.py -i eth0 -r
+```
 ▶ Version 3 (Auto Interface + Random MAC)
+```bash
 sudo python3 mac_spoof-v3.py -a -r
+```
 ▶ Version 3 (Restore Original MAC)
+```bash
 sudo python3 mac_spoof-v3.py -a --restore
+```
+---
+
 🧾 Command-Line Options (v3)
-Option	Description
--i, --interface	Specify network interface
--a, --auto	Auto-detect active interface
--m, --mac	Manually set MAC address
--r, --random	Generate random MAC address
---restore	Restore original MAC address
--h, --help	Show help menu
+- Option	Description
+- -i, --interface	Specify network interface
+- -a, --auto	Auto-detect active interface
+- -m, --mac	Manually set MAC address
+- -r, --random	Generate random MAC address
+- --restore	Restore original MAC address
+- -h, --help	Show help menu
+
+---
+
 📌 Example Output
-[+] Interface : eth0
-[+] Current MAC : xx:xx:xx:xx:xx:xx
-[+] Generated Random MAC : xx:xx:xx:xx:xx:xx
-[✔] MAC successfully changed
+- [+] Interface : eth0
+- [+] Current MAC : xx:xx:xx:xx:xx:xx
+- [+] Generated Random MAC : xx:xx:xx:xx:xx:xx
+- [✔] MAC successfully changed
+
+---
+
 ⚠ Disclaimer
-This tool is created strictly for educational purposes.
-Use it only on systems or networks you own or have explicit permission to test.
-The author is not responsible for any misuse of this tool.
+- This tool is created strictly for educational purposes.
+- Use it only on systems or networks you own or have explicit permission to test.
+- The author is not responsible for any misuse of this tool.
+
+---
 
 👤 Author
-Created by Giga_Byte_Flow
-📈 Future Improvements
-Vendor-based MAC spoofing
-macOS compatibility
-Stealth / silent mode
-Logging and report generation
-Packaging as a Kali Linux tool
+- Created by Giga_Byte_Flow
+- 📈 Future Improvements
+- Vendor-based MAC spoofing
+- macOS compatibility
+- Stealth / silent mode
+- Logging and report generation
+- Packaging as a Kali Linux tool
+
+---
+
 ⭐ If you find this project useful, feel free to star the repository and share feedback.
